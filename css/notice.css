@@ -1,0 +1,139 @@
+header{
+    background:linear-gradient(30deg, rgb(73, 80, 92) ,rgb(97, 21, 21), rgb(0, 0, 0) , rgb(97, 21, 21), rgb(70, 76, 87));
+}
+header p{
+    text-align: center;
+    padding-top: 1em;
+    margin: 0;
+}
+.logo{
+    filter: drop-shadow(0 0 3px white);
+}
+.menu_bar{
+    display: none;
+
+}
+header{
+    background: url("../img/news.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+
+}
+
+nav{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    font-family: sans-serif;
+    font-size: 20px;
+    background:rgba(71, 22, 22, 0.842);
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-item,.lag{
+    font-family: sans-serif;
+    font-size: 20px;
+    background:rgba(71, 22, 46, 0.884);
+}
+.nav-link,nav a,.log{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 20px rgb(255, 0, 123);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.nav-link:hover,nav a:hover,.log:hover{
+    color: white;
+    text-shadow: 0 0 3px yellow;
+    text-decoration: underline;
+}
+  .divider {
+      position: relative;
+      padding: 8px;
+      color:black;
+    text-shadow:0 0 5px white;
+    margin: 10px 0;
+    border-top: 2px dashed #000;
+    border-bottom: 2px dashed #000;
+    border-left: none;
+    border-right: none;
+  }
+  .divider .img1{
+      width: 100%;
+      z-index: 2;
+  }
+  .divider .img2{
+    width: 70%;
+    z-index: 2;
+}
+  .divider .cimg2{
+    text-align: center;
+  }
+#adn{
+    position: relative;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  transform: rotate(-90deg); /* Rota la imagen en sentido contrario a las agujas del reloj */
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+}
+#adn img {
+    position: absolute;
+    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
+    transform: rotate(30deg); /* Rota la imagen en sentido de las agujas del reloj para corregir la rotación del contenedor */
+  }
+
+
+@media screen and (max-width: 900px){
+    nav{
+        width: 76%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+        background: rgba(71, 22, 22, 0.842);
+    }
+    nav a{
+        padding-top: 4%;
+        font-size: 20px;
+        height: 35px;
+        display: block;
+        border-bottom: 1px solid rgba(225,255,255, .3);
+    }
+    .menu_bar{
+        margin: 0;
+        display: block;
+        width: 100%;
+        background: rgba(56, 37, 37, 0.925);
+
+    }
+    .menu_bar .btn_menu{
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 22px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span{
+        float: right;
+        font-size: 35px;
+    }
+}
+@media (max-width: 600px) {
+    .divider {
+      border-top: 1px dashed #000;
+      border-bottom: 1px dashed #000;
+      background: none;
+      height: auto;
+      margin: 10px 0;
+    }
+  }
